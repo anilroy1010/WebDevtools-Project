@@ -47,7 +47,13 @@ section {
 }
 @media (max-width:678px) {
     p, span{
-        text-align: justify;
+        text-align: left;
+    }
+    
+}
+@media (max-width:478px) {
+    .footer-logo h2,.p2{
+        text-align: center;
     }
     
 }
@@ -138,12 +144,23 @@ section h2 {
 }
 
 footer {
-    background-color:#026b80;
+    background-color:rgb(2, 107, 128);
     color: #fff;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
 }
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.footer-logo h2{
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
 .btn{
     background-color:#033e4a;
     border: #033e4a;
