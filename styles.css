@@ -1,0 +1,221 @@
+/* Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+header {
+    background-color:#033e4a;
+    color: #fff;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+header .logo {
+    font-size: 1.5rem;
+}
+header .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+header .navbar a:hover {
+    color: #f4a261;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+#home{
+    background-color: #ddf5fa;
+    padding-top:100px;
+
+}
+.content{
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 5px;
+    text-align: center;
+}
+@media (max-width:678px) {
+    p, span{
+        text-align: justify;
+    }
+    
+}
+
+.hero-h1{
+    display: inline-block;
+    background-color: #45a6b9;
+    color: white;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.432);
+    font-weight: bolder;
+    font-size: larger;
+}
+.content  #greeting{
+    font-size:20px;
+    color: #333;
+    margin-top: 20px;
+    font-family:"Yatra one", sans-serif;
+    font-weight: bolder;
+}
+section h2 {
+    display: inline-block;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    text-align: center;
+    padding: 7px;
+    border-radius: 5px;
+}
+#services{
+    background-color: #45a6b9;
+}
+#courses{
+    background-color:#ddf5fa;
+}
+#register{
+    background-color: #45a6b9;
+}
+.services-container, .courses-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.service{
+    background-color: #ddf5fa;
+    padding: 1rem;
+    border-radius: 5px;
+    flex: 1 1 300px;
+    margin: 1rem;
+    text-align: center;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.service:hover{
+    cursor: pointer;
+    transform: scale(1.1); /* Slightly larger on hover */
+    box-shadow:-5px 5px 10px rgba(0, 0, 0, 0.3),
+                5px 5px 10px rgba(0, 0, 0, 0.3),
+               -5px -5px 10px rgba(0, 0, 0, 0.3),
+                5px -5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.course{
+    background-color: #0d7f95;
+    padding: 1rem;
+    border-radius: 5px;
+    flex: 1 1 300px;
+    margin: 1rem;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.432);
+
+}
+#register {
+    text-align: center;
+}
+.register-btn {
+    padding: 0.5rem 1.5rem;
+    color: #fff;
+    background-color:#033e4a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.register-btn:hover {
+    background-color: #f4a261;
+}
+
+footer {
+    background-color:#026b80;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.btn{
+    background-color:#033e4a;
+    border: #033e4a;
+}
+.menu-toggle {
+    display: none;
+}
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position:absolute;
+        top: 100%;
+        left: 50%;
+        border-bottom-left-radius: 20px;
+        background-color:#06849c;        
+        width: 50%;
+    }
+    .navbar a {
+        margin: 1rem 0;
+        padding: 1rem;
+        text-align: center;
+        display: block;
+        color: #fff;
+    }
+  
+    .hamburger {
+        display: block;
+    }
+
+    /* Show navbar when menu-toggle is checked */
+    #menu-toggle:checked + .hamburger + .navbar {
+        display: flex;
+    }
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    /* When checkbox is checked, transform the hamburger icon to an "X" */
+    #menu-toggle:checked + .hamburger span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    #menu-toggle:checked + .hamburger span:nth-child(2) {
+        opacity: 0; /* Middle line disappears */
+    }
+    #menu-toggle:checked + .hamburger span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+@media (max-width: 480px) {
+    .register-btn {
+        width: 100%;
+    }
+}
