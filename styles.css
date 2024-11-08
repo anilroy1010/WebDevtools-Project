@@ -168,6 +168,12 @@ footer {
 .btn:hover{
     background-color: #f4a261;
 }
+@media (max-width:678px) {
+    .btn:hover{
+        background-color: #f4a261;
+    }
+    
+}
 .menu-toggle {
     display: none;
 }
