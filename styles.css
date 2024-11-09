@@ -191,17 +191,23 @@ footer {
         flex-direction: column;
         position:absolute;
         top: 100%;
-        left: 50%;
         border-bottom-left-radius: 20px;
-        background-color:#06849c;        
+        padding-right: 10px;
+        background-color:#06849c;  
+        left: 50%;
         width: 50%;
     }
     .navbar a {
-        margin: 1rem 0;
-        padding: 1rem;
+        padding: 10px;
+        border-top: 0.5px solid #adacac;
+        width: 100%;
         text-align: center;
         display: block;
         color: #fff;
+    }
+    .navbar a:hover{
+        background-color: #033e4a;
+        
     }
   
     .hamburger {
