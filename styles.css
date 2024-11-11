@@ -7,6 +7,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    width: 100%;
+    overflow-x: hidden;
 }
 header {
     background-color:#033e4a;
@@ -40,6 +42,7 @@ section {
     background: linear-gradient(180deg, #45a6b9 0%, #ddf5fa 100%);
     padding-top:150px;
     height: 100vh;
+    
 
 }
 #services2{
