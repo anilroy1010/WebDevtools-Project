@@ -53,7 +53,6 @@ section {
     padding: 2rem;
     border-radius: 5px;
     text-align: center;
-    overflow-x: hidden;
 }
 @media (max-width:678px) {
     p, span{
@@ -106,6 +105,15 @@ section {
     font-family:fantasy;
     word-spacing: 3px;
     letter-spacing: 1px;
+}
+.start{
+    border: none;
+    z-index: 10;
+    color: #084b58;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
 }
 section h2 {
     display: inline-block;
