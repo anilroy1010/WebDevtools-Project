@@ -19,8 +19,8 @@ body {
     #home{
      /*background-color: #ddf5fa;
     background: linear-gradient(180deg, #45a6b9 0%, #ddf5fa 100%);*/
-    padding-top:150px;
-    height: 80vh !important;
+    padding-top:100px;
+    height: 100vh;
     }
     
 }
@@ -54,11 +54,21 @@ section {
 #home{
     /*background-color: #ddf5fa;
     background: linear-gradient(180deg, #45a6b9 0%, #ddf5fa 100%);*/
-    padding-top:150px;
+    padding-top:100px;
     height:100vh;
     
 
 }
+@media (max-width: 1080px) and (orientation: landscape) {
+    #home{
+        height: 100vh;
+        padding-top: 100px;
+    }
+    .content{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+  }
 .hero-video {
     position: absolute;
     top: 0;
@@ -89,6 +99,8 @@ section {
     padding: 2rem;
     border-radius: 5px;
     text-align: center;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 @media (max-width:678px) {
     p, span{
@@ -121,6 +133,8 @@ section {
         border-radius: 5px;
         text-align: center;
         overflow-x: hidden;
+        margin-top: 0px;
+        padding-top: 0px;
 }
 .hero-h1{
    border: none;
