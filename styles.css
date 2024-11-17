@@ -116,6 +116,10 @@ section {
     p, span{
         text-align: left;
     }
+    .slides{
+        box-sizing: border-box;
+        height: 60vh;
+    }
     
 }
 @media (max-width:478px) {
