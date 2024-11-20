@@ -21,6 +21,7 @@ body {
     background: linear-gradient(180deg, #45a6b9 0%, #ddf5fa 100%);*/
     padding-top:100px;
     height: 100vh;
+    
     }
     
 }
@@ -56,7 +57,8 @@ section {
     /*background-color: #ddf5fa;
     background: linear-gradient(180deg, #45a6b9 0%, #ddf5fa 100%);*/
     padding-top:100px;
-    height:100vh;
+    min-height: 100vh;
+    
     
 
 }
@@ -91,9 +93,19 @@ section {
   }
 #services2{
     background-color: #45a6b9;
-    padding-top: 100px;
+    padding-top: 150px;
     margin-bottom: 35px;
 
+}
+#final-project{
+    background-color: #ddf5fa;
+    min-height: 100vh;
+    padding-top: 150px;
+    z-index: 1
+}
+.project-container{
+    margin: 10px;
+    z-index: -1;
 }
 .content{
     margin: 1rem;
@@ -215,13 +227,16 @@ section h2 {
     margin-bottom: 1rem;
     border: 1px solid black;
     text-align: center;
-    padding: 7px;
+    padding: 10px;
     border-radius: 5px;
 }
 #services{
     background-color: #45a6b9;
     min-height: 100vh;
     padding-top: 50px;
+}
+#service{
+    background-color: #ddf5fa;;
 }
 #courses{
     background-color:#ddf5fa;
