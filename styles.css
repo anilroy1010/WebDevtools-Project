@@ -103,6 +103,25 @@ section {
     padding-top: 0px;
     margin-top: 0px;
 }
+
+#about{
+    background-color:#ddf5fa;
+    padding-top: 50px;
+}
+.about-content{
+    padding:20px;
+}
+#about-link{
+    background-color:#ddf5fa;
+    padding-top: 130px;
+    margin: 0;
+}
+.about-content-link{
+    background-color: #F3FDE8;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: justify;
+}
 .slides{
     box-sizing: border-box;
     height: 78vh;
@@ -207,6 +226,7 @@ section h2 {
 #courses{
     background-color:#ddf5fa;
     min-height: 100vh;
+    padding-top: 50px;
 }
 #register{
     background-color: #45a6b9;
