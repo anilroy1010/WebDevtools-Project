@@ -13,5 +13,5 @@ function typeGreeting(text, elementId, speed) {
     type();
   }
   window.onload = function() {
-    typeGreeting("All resources and tool's for develop web and app!", "greeting", 30);
+    typeGreeting("All resources and tool's for learning and building!", "greeting", 30);
   };
