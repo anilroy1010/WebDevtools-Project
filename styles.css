@@ -140,6 +140,7 @@ section {
 #about{
     background-color:#ddf5fa;
     padding-top: 50px;
+    margin-top: 15px;
 }
 .about-content{
     padding:20px;
@@ -266,7 +267,9 @@ section h2 {
 }
 #register{
     background-color: #45a6b9;
+    min-height:100vh;
 }
+
 .services-container, .courses-container {
     display: flex;
     justify-content: space-around;
@@ -315,6 +318,40 @@ section h2 {
 }
 .register-btn:hover {
     background-color: #f4a261;
+}
+.why-websick-container{
+      padding: 50px 30px;
+      background-color:#fefefe;
+      display: grid;
+      /*grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));*/
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 200px 200px;
+      box-sizing: border-box;
+      border-radius: 15px;
+      gap: 30px;
+      overflow: hidden;
+      grid-auto-rows: auto;
+      min-height: 100%;
+
+}
+@media screen and (max-width: 1024px) {
+    .why-websick-container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;  
+    }
+}
+@media screen and (max-width: 768px) {
+    .why-websick-container{
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;  
+    }
+}
+.reason{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding:10px;
+    border-radius: 15px;
 }
 
 footer {
