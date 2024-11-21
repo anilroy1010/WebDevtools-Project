@@ -107,6 +107,27 @@ section {
     margin: 10px;
     z-index: -1;
 }
+.whatsapp-button {
+    position: fixed;
+    top:50%;
+    right:0px;
+    padding: 0px;
+    border-radius: 50px;
+    z-index: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0% {
+      transform: translateY(-50%) scale(1); /* Initial state, no scale */
+    }
+    50% {
+      transform: translateY(-50%) scale(1.1); /* Grow to 110% */
+    }
+    100% {
+      transform: translateY(-50%) scale(1); /* Return to normal */
+    }
+  }
 .content{
     margin: 1rem;
     padding: 2rem;
