@@ -425,6 +425,10 @@ section h2 {
     .language-container{
         padding: 10px;
     }
+    cms-container{
+        grid-template-columns: 1fr;
+    }
+   
 }
 @media screen and (max-width: 768px) {
     .why-websick-container, .front-end-container,.back-end-container, .framework-container{
@@ -440,6 +444,12 @@ section h2 {
     .testing-container{
         padding: 15px;
     }
+    .cms-container{
+        box-sizing: border-box;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+   
 }
 .reason{
     background-color: #ddf5fa;
@@ -448,6 +458,17 @@ section h2 {
     text-align: left;
     padding:10px;
     border-radius: 15px;
+}
+#cms-section{
+    background-color:lightblue;
+}
+.cms-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    box-sizing: border-box;
+    grid-auto-rows: auto;
 }
 
 footer {
