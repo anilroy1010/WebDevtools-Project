@@ -91,6 +91,65 @@ section {
     background: rgba(0, 0, 0, 0.3); /* Overlay to make text readable */
     z-index: 0;
   }
+#language-section{
+    background-color: #45a6b9;
+    padding: 16px;
+}
+.language-container{
+    background-color:#fefefe;
+    padding: 30px;
+}
+.front-end-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    padding: 15px 0;
+
+
+
+}
+.back-end-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    padding: 15px 0;
+}
+.testing-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:auto;
+    gap: 30px;
+    padding: 15px 0;
+}
+.test-name{
+    text-align: left;
+}
+.language-name{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+    background-color: #e7d0f8;
+    border-radius: 10px;
+}
+.language-name1{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+    background-color: #d9eee1;
+    border-radius: 10px;
+}
+
+.last-row{
+    grid-column: span 3;
+    text-align: center;
+}
+
+
+
 #services2{
     background-color: #45a6b9;
     padding-top: 150px;
@@ -139,8 +198,12 @@ section {
 
 #about{
     background-color:#ddf5fa;
-    padding-top: 50px;
-    margin-top: 15px;
+    padding: 50px 16px;
+    margin: 16px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(66, 61, 61, 0.2), 
+      -3px -3px 10px rgba(66, 61, 61, 0.2); 
+
 }
 .about-content{
     padding:20px;
@@ -268,6 +331,7 @@ section h2 {
 #register{
     background-color: #45a6b9;
     min-height:100vh;
+    padding: 16px;
 }
 
 .services-container, .courses-container {
@@ -332,21 +396,32 @@ section h2 {
       overflow: hidden;
       grid-auto-rows: auto;
       min-height: 100%;
+      box-shadow: 3px 3px 10px rgba(66, 61, 61, 0.3), 
+      -3px -3px 10px rgba(66, 61, 61, 0.3); 
 
 }
 @media screen and (max-width: 1024px) {
-    .why-websick-container {
+    .why-websick-container, .front-end-contai, .back-end-container, .testing-container {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;  
     }
+    .language-container{
+        padding: 10px;
+    }
 }
 @media screen and (max-width: 768px) {
-    .why-websick-container{
+    .why-websick-container, .front-end-container,.back-end-container, .testing-container{
+      margin: 0px;
+      padding: 15px;
       grid-template-columns: 1fr;
       grid-template-rows: auto;  
     }
+    .language-container{
+        padding: 1px;
+    }
 }
 .reason{
+    background-color: #ddf5fa;
     display: flex;
     flex-direction: column;
     text-align: left;
