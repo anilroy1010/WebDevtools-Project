@@ -147,7 +147,24 @@ section {
     grid-column: span 3;
     text-align: center;
 }
+#framework-section{
+    background-color:  #d9eee1;
+}
+.framework-container{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ gap: 30px;
+}
+a{
+    text-decoration: none;
+}
+.framework{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    text-align: left;
 
+}
 
 
 #services2{
@@ -401,7 +418,7 @@ section h2 {
 
 }
 @media screen and (max-width: 1024px) {
-    .why-websick-container, .front-end-contai, .back-end-container, .testing-container {
+    .why-websick-container, .front-end-contai, .back-end-container, .framework-container{
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;  
     }
@@ -410,7 +427,7 @@ section h2 {
     }
 }
 @media screen and (max-width: 768px) {
-    .why-websick-container, .front-end-container,.back-end-container, .testing-container{
+    .why-websick-container, .front-end-container,.back-end-container, .framework-container{
       margin: 0px;
       padding: 15px;
       grid-template-columns: 1fr;
@@ -419,6 +436,9 @@ section h2 {
     .language-container{
         padding: 1px;
         padding-top: 12px;
+    }
+    .testing-container{
+        padding: 15px;
     }
 }
 .reason{
