@@ -418,6 +418,7 @@ section h2 {
     }
     .language-container{
         padding: 1px;
+        padding-top: 12px;
     }
 }
 .reason{
