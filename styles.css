@@ -27,9 +27,14 @@ body {
      .navbar a.hide-logo{
         border-top: none; display:block; pointer-events: auto;
     }
-    .navbar .hide-tab{
+    .navbar a.hide-tab{
         display: block;
         pointer-events:auto;
+    }
+    .navbar .hide-media{
+        display: flex;
+        justify-content:left;
+
     }
     
 }
@@ -55,6 +60,10 @@ header .logo {
     display: none;
     pointer-events: none;
 }
+.hide-media{
+    display: none;
+}
+
 header .navbar a {
     color:white;
     text-decoration: none;
@@ -496,7 +505,7 @@ footer {
         flex-direction: column;
         position:absolute;
         top: 0px;
-        height: 70vh;
+        height: 80vh;
         padding-right: 10px;
         background-color:#659287;
         transition: color 0.10s border-color 0.10s;
@@ -507,7 +516,7 @@ footer {
         padding: 10px;
         border-top: 0.5px solid #adacac;
         width: 100%;
-        text-align: center;
+        text-align: left;
         display: block;
         color: #fff;
     }
