@@ -24,6 +24,9 @@ body {
     .content{
         margin-top: 10px;
     }
+     .navbar a.hide-logo{
+        border-top: none; display:block; pointer-events: auto;
+    }
     
 }
 header {
@@ -40,6 +43,9 @@ header {
 header .logo {
     font-family: fantasy;
     font-size: 1.5rem;
+}
+.navbar .hide-logo{
+    border-top: none; display: none; pointer-events: none;
 }
 header .navbar a {
     color:white;
