@@ -27,7 +27,7 @@ body {
     
 }
 header {
-    background-color:#E0E2ED;
+    background-color:#659287;/*#E0E2ED;*/
     color:white;
     display: flex;
     position: fixed;
@@ -42,7 +42,7 @@ header .logo {
     font-size: 1.5rem;
 }
 header .navbar a {
-    color:black;
+    color:white;
     text-decoration: none;
     margin: 0 1rem;
 }
