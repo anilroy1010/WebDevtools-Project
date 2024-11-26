@@ -30,7 +30,7 @@ section {
 @media(max-width:676px){
     .customer-support{
         position: absolute;
-        bottom: 320px;
+        bottom: 32vh;
         left: 10px;
         right: 10px;
         text-align: left;
