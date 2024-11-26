@@ -16,6 +16,8 @@ function typeGreeting(text, elementId, speed) {
     typeGreeting("All resources and tool's for learning and building!", "greeting", 30);
   };
 
+  /*navbar slideshow at 768px*/
+
   const collapsibles = document.querySelectorAll('.collapsible');
 
     // Loop through each button and add a click event listener
@@ -36,3 +38,24 @@ function typeGreeting(text, elementId, speed) {
           
         });
     });
+/*form submission*/
+    document.querySelector('form').addEventListener('submit', function (event) {
+      let isValid = true;
+  
+      // Check if required fields are filled
+      const requiredFields = document.querySelectorAll('input[required], select[required], textarea[required]');
+      requiredFields.forEach(function(field) {
+          if (!field.value) {
+              isValid = false;
+              field.style.borderColor = 'red'; // Highlight empty fields
+          } else {
+              field.style.borderColor = ''; // Remove highlight if filled
+          }
+      });
+  
+      if (!isValid) {
+          event.preventDefault(); // Prevent form submission if validation fails
+          alert('Please fill in all required fields.');
+      }
+  });
+  
