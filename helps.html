@@ -51,7 +51,7 @@
     </header>
     <!--home section-->
     <section id="home-section">
-        <div><h3 style="text-align: center;">What are in your mind?</h3>
+        <div class="customer-support">
             <h4>Do you want a website for your business?  <a href="services.html">start here</a></h4>
             <h5>If your want your project done,<a href="services.html#project-section">we are here</a></h5>
         </div>
@@ -96,16 +96,6 @@
             <p>A: Currently we provide help to do the project for  web apps, mobile apps for different sectors</p>
         </div>
     </section>  
-    <!--Contact Section-->
-    <section id="contact-section">
-            <h3>Contact Support</h3>
-            <p>If you have any questions, feel free to reach out:</p>
-            <ul type="disc">
-                <li>Email: <a href="mailto:support@websick.in">support@websick.in</a></li>
-                <li>Phone: +19-7047419282</li>
-                <li>Available 10 AM - 4 PM, Monday to Friday.</li>
-            </ul>
-    </section>
     <!--guide section-->
     <section id="guides">
             <h3>Guides</h3>
@@ -158,11 +148,78 @@
 
             </ul>
     </section>
-        
-    <section id="feedback">
-            <h3>Feedback</h3>
-            <p>We value your feedback to improve our services. Let us know what you think by filling out our <a href="#">feedback form</a>.</p>
-     </section>
+    <!--Contact Section-->
+    <section id="contact-section">
+        <h3>Contact Support</h3>
+        <p>If you have any questions, feel free to reach out:</p>
+        <ul type="disc">
+            <li>Email: <a href="mailto:support@websick.in">support@websick.in</a></li>
+            <li>Phone: +19-7047419282</li>
+            <li>Available 10 AM - 4 PM, Monday to Friday.</li>
+        </ul>
+     </section>    
+<!--Feedback Section-->
+<section id="feedback">
+    <div class="feedback-form-container">
+        <h2>We Value Your Feedback!</h2>
+        <p>Please take a moment to share your experience with our services. Your feedback helps us improve and serve you better.</p>
+
+        <form action="submit_feedback.php" method="POST">
+            <!-- Basic Information -->
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+
+            <!-- Rating -->
+            <div class="form-group">
+                <label for="rating">How would you rate your overall experience?</label>
+                <select id="rating" name="rating" required>
+                    <option value="" disabled selected>Select a rating</option>
+                    <option value="1">1 - Very Poor</option>
+                    <option value="2">2 - Poor</option>
+                    <option value="3">3 - Average</option>
+                    <option value="4">4 - Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+            </div>
+
+            <!-- Feedback -->
+            <div class="form-group">
+                <label for="comments">What did you like about our service?</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="improvements">What can we improve?</label>
+                <textarea id="improvements" name="improvements" rows="4" placeholder="Enter your suggestions"></textarea>
+            </div>
+
+            <!-- Overall Satisfaction -->
+            <div class="form-group">
+                <label>Would you recommend our services to others?</label>
+                <div>
+                    <input type="radio" id="yes" name="recommend" value="Yes" required>
+                    <label for="yes">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" id="no" name="recommend" value="No" required>
+                    <label for="no">No</label>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit" class="submit-btn"><a style="text-decoration: none; color: white;" href="./formsubmit.html">Submit Feedback</a></button>
+            </div>
+        </form>
+    </div>
+ </section>
 <script src="script.js"></script>
 </body>
 </html>
