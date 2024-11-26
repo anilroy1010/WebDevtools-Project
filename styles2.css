@@ -6,12 +6,53 @@ body {
     background-color: #f9f9f9;
     color: #333;
 }
-main {
-    margin: 0 10px;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
 section {
     padding-top: 100px;
+}
+#home-section{
+    background-color: #D3F1DF;
+    text-align: justify;
+}
+#faq{
+    padding: 10px;
+
+}
+
+.collapsible {
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+    text-transform: capitalize;
+}
+.content {
+    max-height: 0; /* Initially hidden */
+    overflow: hidden; /* Hide content that overflows */
+    transition: max-height 0.5s ease-out; /* Smooth transition */
+    padding: 0px;
+    text-align: left;
+}
+.content.open {
+    padding: 5px 0px; /* Add padding when expanded */
+    text-align: left;
+}
+
+.collapsible:after {
+    content: '+';
+    font-weight: bold;
+    float: right;
+}
+
+.collapsible.active:after {
+    content: '-';
+}
+#contact-section{
+    background-color: #D5FFD0;
+}
+ul{
+    text-align: left;
 }
