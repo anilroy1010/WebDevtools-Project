@@ -522,6 +522,7 @@ footer {
     }
     .navbar a:hover{
         background-color: #6e9c91;
+        text-decoration: underline;
     }
     .hamburger {
         display: block;
@@ -530,8 +531,25 @@ footer {
     /* Show navbar when menu-toggle is checked */
     #menu-toggle:checked + .hamburger + .navbar {
         display: flex;
+        animation: slideDown 0.5s ease-out, slideIn 0.5s ease-out, fadeIn 0.5s ease-out;
     }
 }
+@keyframes slideDown {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      background-color: rgba(247, 255, 181, 0.31);
+    }
+    100% {
+      background-color:rgba(72, 217, 156, 0.31) /* Semi-transparent dark background */
+    }
+  }
 
 .hamburger span {
     display: block;
