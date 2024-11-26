@@ -10,10 +10,35 @@ section {
     padding-top: 100px;
 }
 #home-section{
-    background-color: #D3F1DF;
-    text-align: justify;
+    background-image: url(./resource/Customer-Support.png);
+    background-repeat: no-repeat;
+    height: 80vh;
+    text-align: right;
 }
+@media(max-width:768px){
+    #home-section{
+        height: 70vh;
+    }
+}
+.customer-support{
+    float: right;
+    margin-top: 4rem;
+    margin-right: 0rem;
+    padding: 5px;
+    background-color: #FFC436;
+}
+@media(max-width:676px){
+    .customer-support{
+        position: absolute;
+        bottom: 320px;
+        left: 10px;
+        right: 10px;
+        text-align: left;
+    }
+}
+
 #faq{
+    background-color: #D9EEE1;
     padding: 10px;
 
 }
@@ -51,8 +76,64 @@ section {
     content: '-';
 }
 #contact-section{
-    background-color: #D5FFD0;
+    background-color: #FAFFAF;
+    margin: 16px;
+    padding: 15px;
+    border-radius: 10px;
 }
 ul{
     text-align: left;
 }
+
+.feedback-form-container {
+    background-color: white;
+    margin: 0 200px;
+    padding: 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+@media(max-width:768px) {
+    .feedback-form-container{
+        margin: 0px;
+         padding: 10px 10px;
+    }
+    #feedback{
+        margin: 0px;
+        padding: 0px 20px;
+    }
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+textarea {
+    resize: vertical;
+}
+
+button.submit-btn {
+    background-color: #659287;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+button.submit-btn:hover {
+    background-color: #FFC436;
+}
+
