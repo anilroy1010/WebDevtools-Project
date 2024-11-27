@@ -1,11 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
   <url>
-    <loc>https://www.websick.in/</loc>
+    <loc>https://www.websick.in/index.html</loc>
     <priority>1.0</priority>
   </url>
+
+  <!-- About Us Page -->
   <url>
-    <loc>https://www.websick.in/about.html</loc>
+    <loc>https://www.websick.in/about-us.html</loc>
     <priority>0.8</priority>
   </url>
+
+  <!-- Blog Page -->
+  <url>
+    <loc>https://www.websick.in/blog.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Career Page -->
+  <url>
+    <loc>https://www.websick.in/career.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Form Submit Page -->
+  <url>
+    <loc>https://www.websick.in/formsubmit.html</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Help Page -->
+  <url>
+    <loc>https://www.websick.in/help.html</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Hire Expert Page -->
+  <url>
+    <loc>https://www.websick.in/hire-expart.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Learning Info Page -->
+  <url>
+    <loc>https://www.websick.in/learninginfo.html</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Learn More Page -->
+  <url>
+    <loc>https://www.websick.in/learmore.html</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- More Page -->
+  <url>
+    <loc>https://www.websick.in/more.html</loc>
+    <priority>0.5</priority>
+  </url>
 </urlset>
+
