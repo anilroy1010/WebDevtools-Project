@@ -10,43 +10,32 @@ section {
     padding-top: 100px;
 }
 #home-section{
-    background-image: url(./resource/Customer-Support.png);
-    background-repeat: no-repeat;
-    height: 80vh;
-    text-align: right;
+    display: flex;
+    flex-direction:column;
+    background-color: #ecac4be3;
+    padding-top: 80px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: black;
+    text-align: center;
 }
 @media(max-width:768px){
-    #home-section{
-        height: 70vh;
+    .support-img h4,h5{
+        color: black;
+        text-align: center;
+        position: relative;
     }
-}
-.customer-support{
-    float: right;
-    margin-top: 4rem;
-    margin-right: 0rem;
-    padding: 5px;
-    background-color: #FFC436;
-}
-@media(max-width:768px){
-    .customer-support{
-        position: absolute;
-        bottom: 30vh;
-        left: 10px;
-        right: 10px;
-        text-align: left;
-    }
-}
-@media only screen and (max-width: 1024px) {
-    /* Styles for tablet screens */
-    .customer-support {
-        height: auto;  
-        padding: 20px;
-    }
-}
 
+}
+.support-img h4,h5{
+    color: black;
+    text-align: right;
+    position: relative;
+}
 #faq{
     background-color: #D9EEE1;
     padding: 10px;
+    margin-top: 10px;
 
 }
 
@@ -143,4 +132,3 @@ button.submit-btn {
 button.submit-btn:hover {
     background-color: #FFC436;
 }
-
