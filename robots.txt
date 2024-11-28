@@ -1,0 +1,23 @@
+# Robots.txt for websick.in
+
+# Allow all user agents to access the site
+User-agent: *
+
+# Disallowed Pages
+Disallow: /formsubmit.html      # Form submission handling page
+Disallow: /hire-expart.html     # Hire expert page (not relevant for indexing)
+Disallow: /private/             # Placeholder for private content
+Disallow: /admin/               # Admin panel (if it exists)
+
+# Allow Specific Pages (All others are accessible by default)
+Allow: /index.html
+Allow: /about-us.html
+Allow: /blog.html
+Allow: /career.html
+Allow: /help.html
+Allow: /learninginfo.html
+Allow: /learmore.html
+Allow: /more.html
+
+# Sitemap Location
+Sitemap: https://websick.in/sitemap.xml
