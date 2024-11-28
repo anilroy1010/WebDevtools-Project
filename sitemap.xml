@@ -5,6 +5,18 @@
     <loc>https://www.websick.in/index.html</loc>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://www.websick.in/resource/brand-icon.png</loc>
+    <priority>0.8</priority>
+    <lastmod>2024-11-28</lastmod>
+  </url>
+  
+  <!-- Logo -->
+  <url>
+    <loc>https://www.websick.in/resource/brand-logo2.png</loc>
+    <priority>0.8</priority>
+    <lastmod>2024-11-28</lastmod>
+  </url>
 
   <!-- About Us Page -->
   <url>
