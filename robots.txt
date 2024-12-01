@@ -14,9 +14,9 @@ Allow: /index.html
 Allow: /about-us.html
 Allow: /blog.html
 Allow: /career.html
-Allow: /help.html
+Allow: /helps.html
 Allow: /learninginfo.html
-Allow: /learmore.html
+Allow: /learnmore.html
 Allow: /more.html
 
 # Sitemap Location
