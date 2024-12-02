@@ -16,14 +16,6 @@ body {
         box-sizing: border-box;
         width: 100%;
     }
-    #home{
-    color: black;
-    padding-top:100px;
-    height: 100vh;
-    }
-    .content{
-        margin-top: 10px;
-    }
      .navbar a.hide-logo{
         border-top: none; display:block; pointer-events: auto;
     }
@@ -39,8 +31,7 @@ body {
     
 }
 header {
-    background-color:#659287;/*#E0E2ED;*/
-    color:white;
+    background: #6e9c91;
     display: flex;
     position: fixed;
     width: 100%;
@@ -65,7 +56,7 @@ header .logo {
 }
 
 header .navbar a {
-    color:white;
+    color:#1C335A;
     text-decoration: none;
     margin: 0 1rem;
 }
@@ -78,13 +69,30 @@ section {
     text-align: center;
 }
 #home{
-    background-color: #7B949C;
-    padding-top:30vh;
+    margin: 0;
+    padding:10px 0;
     min-height: 100vh; 
 }
+.gradient-background {
+    background: linear-gradient(300deg, #db6161, #f9f6f4, #75b855);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 .hero-h1{
     display: inline-block;
-    color:white;
+    color:#1C335A;
     margin-top: 50px;
     padding-bottom: 0px;
     border-radius: 50px;
@@ -103,11 +111,9 @@ section {
     }
   }
 #language-section{
-    background-color: #45a6b9;
     padding: 16px;
 }
 .language-container{
-    background-color:#fefefe;
     padding: 30px;
 }
 .front-end-container{
@@ -298,14 +304,14 @@ a{
 }
 .content  #greeting{
     font-size:20px;
-    color:white;
+    color:#1C335A;
     word-spacing: 3px;
     letter-spacing: 1px;
 }
 .start{
     text-decoration: underline;
     border: none;
-    color: white;
+    color: #1C335A;
     cursor: pointer;
     font-weight: bold;
 }
@@ -444,9 +450,7 @@ section h2 {
     padding:10px;
     border-radius: 15px;
 }
-#cms-section{
-    background-color:lightblue;
-}
+
 .cms-container{
     display: grid;
     grid-template-columns: 1fr;
